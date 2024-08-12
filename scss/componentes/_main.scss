@@ -1,0 +1,256 @@
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION hero  */
+/**************************/
+.hero{
+    font-family: "Roboto", sans-serif;
+    grid-area:main;
+    display: grid;
+    background-color: beige;
+    padding: 10px;
+    .heroPresentacion{
+            h1{
+                font-size: x-large;
+                color: rgb(41, 66, 110);
+            }
+            p{
+                font-size: medium;
+            }
+   
+
+    }
+    .heroMapaGlobal{
+        border: 5px  ;
+        position: relative;
+        h2{
+            position: absolute;
+            width: 100% ;
+            top: 0;
+            color:rgb(41, 66, 110);
+            background-color: rgba(245, 245, 220, 0.589) ;
+        
+        }
+        img{
+            width: 100% ;
+            object-fit: cover;
+        }
+    }
+}
+
+
+/**********************************/
+/* el MAIN de los PUNTOS DE INTERES     */
+/**********************************/
+.puntosInteres{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+        .poisDetalle{
+            font-family: "Roboto", sans-serif;
+            width: 50%;
+            padding: 10px;
+            .datosPois{
+
+                .datosPois_nombre{
+                    background-color: rgb(87, 134, 161);
+                    color: beige;
+                    font-size:x-large;
+                    }        
+                .poiInputDatos{
+                    padding: 10px;
+                    label{
+                        color:  rgb(87, 134, 161);
+                    }
+                    legend{
+                        color:  rgb(87, 134, 161);
+                    }
+                    h4{
+                        font-family: "Roboto", sans-serif;
+                        color:  rgb(87, 134, 161);
+                        font-size: medium;
+                    }
+                }    
+                               
+            }
+        }
+        .poisGaleria{
+            font-family: "Roboto", sans-serif;
+            width: 50%;
+            padding: 10px;
+            .poisMapa{
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);
+                }
+            }
+            .poisFotos{
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);
+                }
+            }
+            .poisClima{
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);                  
+                }
+            }
+}
+}
+
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION armado de  REGIONES  */
+/**************************/
+.ciudades{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+    .ciudadDetalle{
+        font-family: "Roboto", sans-serif;
+        width: 50%;
+        padding: 10px;
+        .ciudadDetalleTitulo{
+            h2{ color: cornflowerblue;
+                font-size:large;
+            }
+        }
+        .datosCiudad{
+            h3{
+                background-color: rgb(87, 134, 161);
+                color: beige;
+                font-size:x-large;
+            }
+            h4{
+                font-size: medium;
+                color:  rgb(87, 134, 161);
+            }
+            select{
+                font-size: medium;
+                color:  rgb(87, 134, 161);
+            }
+            .ciudadNotas{
+                font-size: medium;
+                color:  rgb(87, 134, 161);
+            }
+
+        }
+    .cardsHospedajes{
+        font-family: "Roboto", sans-serif;
+        width: 200%;
+        padding: 10px;
+            h4 {
+                font-weight:bold;
+                color:  rgb(87, 134, 161);
+            }
+            .cardsHospedajesRecomendados{
+                .card{
+                    .card-body{
+                        
+                        h5{
+                            color: rgb(87, 134, 161);
+                        }
+                    }
+
+                }
+            }
+        }
+    .ciudadMultimedia{
+        padding: 10px;
+                .mapaCiudad{
+                    width: 50%;
+                    h5{ 
+                        font-weight:bold;
+                        color:  rgb(87, 134, 161);
+                    }
+                }
+                .galeriaCiudad{            
+                    width: 50%;
+                         h5{
+                          font-weight:bold;
+                           color:  rgb(87, 134, 161);
+                        }
+                    }
+                h5{
+                    font-weight:bold;
+                    color:  rgb(87, 134, 161);
+                }
+            }
+    }
+}
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION armado de  VIAJES  */
+/**************************/
+.viajes{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+    .viajesDetalle{
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        width: 100%;
+        .viajesDetalleTitulo{
+                h1{color: cornflowerblue;
+                    font-size:large;
+                }
+        }
+        .datosViaje{
+            h2{
+                background-color: rgb(87, 134, 161);
+                color: beige;
+                font-size:x-large;
+            }
+  
+        }
+        }
+    .agendaViaje{
+        grid-area: datos;
+        width: 100%;
+    }
+}
+
+/**************************/
+/* el MAIN de la HOME  */
+/* SECCION armado de  VIAJES  */
+/**************************/
+.pasajeros{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: datos;
+    background-color: beige;
+    padding: 10px;
+    .pasajerosDetalle{
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        width: 75%;
+        .pasajerosDetalleTitulo{
+            h2{color: cornflowerblue;
+                font-size:large;
+
+            }
+        }
+        .datosPasajero{
+            .datosPasajero_nombreCompleto{
+                background-color: rgb(87, 134, 161);
+                color: beige;
+                font-size:x-large;
+            }
+        }
+        .fotoPasajero{
+            grid-area: datos;
+            width: 25%;
+        }
+    }
+}

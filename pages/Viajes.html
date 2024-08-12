@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css"/>
+            <!-- FAVICON 16x16 -->
+        <link rel="shortcut icon" href="../img/icon_suitcase.png" type="image/x-icon">
+            <!-- LOS META DESCRPTION Y META KEYWORDs -->
+        <meta name="description" content="Aprende a planificar viajes de trabajo o vacaciones. Planifica tus futuros viajes, con los pasajers que participaran , las ciudades que viajaran y los puntos de interes que visitaran. 
+        Revisa la info de los viajes realizados">
+        <meta name="keywords" content="viajes, vacaciones, turismo, puntos de interes, visitar, regiones, trips, vacations, travel, como llegar, donde alojarme, ciudades, museos, playas, hospedajes ">
+
+        <title>Viajes & Vacaciones - Planificacion de Viajes</title>
+    </head>
+<body>
+    <div class="grid-container-viajes"> 
+    
+<!-- ********************************************************** -->
+<!-- ENCABEZADO UNICO -->
+<!-- ********************************************************** -->
+<header class="cabecera">              
+    <div class="logo">
+        <!--Imagen LOGO -->
+        <img src="../img/carry_on-SinFondo.png" width="80px">
+    </div>
+    <div class="tituloProyecto">
+        <h1>VIAJES & VACACIONES</h1>
+    </div>
+</header>
+  <!-- ********************************************************** -->
+<!-- BARRA DE NACVEGACION NAVBAR DE BOOTSTRAP ***************-->
+<!-- ********************************************************** -->
+<nav class="navbar navbar-expand-lg bg-body-primary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./PuntosInteres.html">Puntos de Interes</a>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./CiudadesLugares.html">Ciudades & Lugares</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Viajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pasajeros.html">Pasajeros</a>          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- ********************************************************** -->
+    <!-- MAIN VIAJES  -->
+    <!-- ********************************************************** -->                    
+    <main class="viajes">      
+        <section class="viajesDetalle">
+            <div class="viajesDetalleTitulo"> 
+                <!-- TITULO DE LA SECCION -->
+                <h1>Viajes</h1>
+            </div>
+                <!-- CENTRAL: Detalle de un Viaje -->
+            <div class="datosViaje"> 
+                <h2 class ="datosViajeNombre">Complete nuevo viaje</h2>
+            
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="inputText" class="col-form-label">Período: </label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="text" id="inputFecha" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                      <span id="passwordHelpInline" class="form-text">
+                        Fechas de inicio y finalizacion.
+                      </span>
+                    </div>
+                  </div>
+   <!-- Tipo de Viajes -->
+                  <div class="claseViajeSeleccion row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="inputText" class="col-form-label">Clase de viaje: </label>
+                    </div>
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Vacaciones">
+                        <label class="form-check-label" for="inlineCheckbox1">Vacaciones</label>
+                      </div>
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Trabajo">
+                        <label class="form-check-label" for="inlineCheckbox2">Laboral</label>
+                      </div>
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Estudio">
+                        <label class="form-check-label" for="inlineCheckbox3">Estudios</label>
+                      </div>
+
+                  </div>
+                  <!-- Estado del viaje -->
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Estado</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Pendiente" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Visitado
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Planificado" >
+                        <label class="form-check-label" for="gridRadios2">
+                          Planificado
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Completo" >
+                        <label class="form-check-label" for="gridRadios3">
+                          Pendiente
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+              <!-- Lista de Pasajeros -->
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">Pasajeros</li>
+                <li class="list-group-item">
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+                        <label class="form-check-label" for="inlineCheckbox1">Matias Perez</label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="2">
+                        <label class="form-check-label" for="inlineCheckbox1">Vanesa Lopez</label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="3">
+                        <label class="form-check-label" for="inlineCheckbox1">Maria Gutierrez</label>
+                      </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="form-check form-check-inline col-auto">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="4">
+                        <label class="form-check-label" for="inlineCheckbox1">Sebastian MArtinez</label>
+                      </div>
+                </li>
+              </ul>
+              
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+                    <label for="floatingTextarea2">Notas & Pendientes:</label>
+                  </div>
+ 
+            </div>    
+        </section>
+        <section class="agendaViaje">
+            <table class="table table-striped table-hover planillaDias" >
+                <thead>
+                  <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Agenda</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Sabado 2-Abril</td>
+                    <td>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 80px"></textarea>
+                            <label for="floatingTextarea1">Actividades</label>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Domingo 3-Abril</td>
+                    <td>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 80px"></textarea>
+                            <label for="floatingTextarea1">Actividades</label>
+                          </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Lunes 4-Abril</td>
+                    <td>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea1" style="height: 80px"></textarea>
+                            <label for="floatingTextarea1">Actividades</label>
+                          </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </main>
+  <!-- ********************************************************** -->
+    <!-- LISTA de VIAJES -->
+    <!-- ********************************************************** -->                    
+
+    <aside class="asideListaViajes">
+        <!-- Lista de Viajes guardaos -->
+        <h2>Lista de Viajes</h2>
+       <!-- Bloque de cards de viajes-->
+        <div class="cardViajes_1">
+            <h3 class="cardViajes_nombre">Vacaciones verano 2024</h3>
+            <p class="cardViajes_fecha">Sabado 2/Feb a Lunes 11/Feb</p>
+            <p class="cardViajes_tipo">Vacaciones</p>
+        </div>
+        <div class="cardViajes_2">
+            <h3 class="cardViajes_nombre">Sao Paulo y Santos</h3>
+            <p class="cardViajes_fecha">Martes 16/Mar a Lunes 25/Mar</p>
+            <p class="cardViajes_tipo">Laboral + Estudios</p>
+        </div>
+        <div class="cardViajes_3">
+            <h3 class="cardViajes_nombre">Semana Santa 2023</h3>
+            <p class="cardViajes_fecha">Lunes 4/Abr a Lunes 11/Abr</p>
+            <p class="cardViajes_tipo">Vacaciones</p>
+        </div>
+        <div class="cardViajes_4">
+            <h3 class="cardViajes_nombre">Invierno EEUU Costa Este 2018</h3>
+            <p class="cardViajes_fecha">Miercoles 2/Dic a Lunes 6/Ene</p>
+            <p class="cardViajes_tipo">Vacaciones + Laboral</p>
+        </div>
+        <div class="cardViajes_5">
+            <h3 class="cardViajes_nombre">Feria Hamburgo y Barcelona</h3>
+            <p class="cardViajes_fecha">Sabado 10/Oct a Lunes 31/Oct</p>
+            <p class="cardViajes_tipo">Laboral</p>
+        </div>
+        <div class="cardViajes">
+          <h3 class="cardViajes_nombre">Townhall Singapore</h3>
+          <p class="cardViajes_fecha">Lunes 2/Nov a Jueves 5/Nov</p>
+          <p class="cardViajes_tipo">Laboral</p>
+      </div>
+    </aside>   
+
+<!-- ********************************************************** -->
+<!-- PIE DE PAGINA  -->
+<!-- ********************************************************** -->
+<footer class="pie">
+
+    <div class="pieNosotros"> <!-- Bloque del pie de la pagina -->
+        <h4>Sobre este sitio</h4> 
+        <p>Quienes Somos</p>
+        <p>Ayuda</p>
+
+        <p>Noticias</p> 
+    </div>
+    <div class="pieDatosUtiles"> <!-- Bloque del pie de la pagina -->
+        <h4>Sitios Utiles</h4> 
+        <p>Clima</p>
+        <p>Vuelos & Reservas</p>
+        <p>Consejos Utiles</p>
+    </div>
+    <div class="pieRedes"> <!-- Bloque del pie de la pagina -->
+        <h4>Contactanos</h4>
+        <p>Whatsapp Me<p3> 
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Email</p>
+    </div>
+</footer>
+</div>
+<!-- del grid container   -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

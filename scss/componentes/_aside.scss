@@ -1,0 +1,165 @@
+
+/**************************/
+/* el MAIN de la HOME     */
+/* SECCION introduccion en el ASIDE  */
+/**************************/
+
+.intro{
+    grid-area:intro;
+    display:grid;
+    background-color:beige;
+    padding: 5px;
+    .introLista{
+
+        ul{
+            height: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+            font-size: 20px;
+            li{
+
+                div{
+                    padding-top: 20px;
+                    h3{
+                        font-size: large;
+                        color: cornflowerblue;
+                        &:hover {color:rgb(41, 66, 110);}
+                    }
+                    p{
+                        font-size: medium;
+                    }
+                    a{
+                        font-size: large;
+                        color: cornflowerblue;
+                        &:hover {color:rgb(41, 66, 110);}
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/**********************************************************/
+/** LISTA de PUNTOS DE INTERES -->
+/**********************************************************/                
+.asideListaCardPois{
+    font-family: "Roboto", sans-serif;
+    grid-area:aside;
+    display: grid;
+    background-color: rgba(233, 211, 183, 0.452);
+    padding: 10px;
+    h3{
+        background-color: rgba(161, 118, 61, 0.452);
+        text-align:center;
+    }
+    div{
+        h5{
+            background-color: rgba(218, 189, 151, 0.452);
+            text-align:left;
+            color: rgb(88, 44, 12);
+            &:hover {color:rgb(41, 66, 110);}
+        }
+        img{
+
+        }
+        p{
+
+        }
+    }
+}
+/**********************************************************/
+/** LISTA de CIUDADES & REGIONES -->
+/**********************************************************/                
+.asideListaCardLugar{
+    font-family: "Roboto", sans-serif;
+    grid-area:aside;
+    display: grid;
+    background-color: rgba(233, 211, 183, 0.452);
+    padding: 10px;
+    h3{
+        background-color: rgba(161, 118, 61, 0.452);
+        text-align:center;
+    }
+    .card{
+        background-color:beige;
+        img{
+
+        }
+        .card-body{
+            background-color:beige;
+            h5{
+                background-color: rgba(218, 189, 151, 0.452);
+                text-align:left;
+            }
+    
+        }
+    }
+}
+
+
+/**********************************************************/
+/** LISTA de VIAJES-->
+/**********************************************************/                
+.asideListaViajes{
+    font-family: "Roboto", sans-serif;
+    grid-area:aside;
+    display: grid;
+    background-color: rgba(233, 211, 183, 0.452);
+    padding: 10px;
+    justify-content: space-between;
+    h2{
+        background-color: rgba(161, 118, 61, 0.452);
+        align-content: center;
+        text-align:center;
+        height: fit-content;
+        font-size: large;
+    }
+    div{
+        background-color: rgba(233, 211, 183, 0.452);
+        padding: 10px;
+        border-style:groove;
+        border-color:rgba(233, 211, 183, 0.452);
+        &:hover{
+            background-color:rgba(161, 118, 61, 0.452)};
+    }
+        h3{
+            padding: 5px;
+            background-color: rgba(218, 189, 151, 0.452);
+            text-align:left;
+            font-size: large;
+            height: max-content;
+            
+        }
+        .cardViajes_fecha{
+            font-weight: bold;
+        }
+       
+    }
+/**********************************************************/
+/** LISTA de PASAJEROS -->
+/**********************************************************/                
+.asideListaPasajeros{
+    font-family: "Roboto", sans-serif;
+    grid-area:aside;
+    display: grid;
+    background-color: rgba(233, 211, 183, 0.452);
+    padding: 10px;
+    h3{
+        background-color: rgba(161, 118, 61, 0.452);
+        text-align:center;
+    }
+    .card{
+        background-color: rgba(233, 211, 183, 0.452);
+        .card-body{
+            h5{
+                background-color: rgba(218, 189, 151, 0.452);
+                text-align:left;
+            }
+    
+        }
+    }
+}

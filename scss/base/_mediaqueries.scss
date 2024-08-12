@@ -1,0 +1,476 @@
+  /**********************************************************/
+  /**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO TABLET 1000PXS                            */
+/**********************************************************/
+/**********************************************************/
+
+@media screen and  (max-width:1000px )
+{
+        /***** DE LA HOME  *******/
+    /**** area HERO */
+    .hero{
+        .heroPresentacion{
+        }
+        .heroMapaGlobal{
+            h2{
+                font-size: large;
+            }
+        }
+    }
+
+    .puntosInteres{
+        .poisDetalle{
+            width: 100%;
+        }
+    }
+
+    /***** DE LA CIUDADES & REGIONES  *******/
+    /**** area main donde hospedarse */
+    .ciudades{
+        .ciudadDetalle{
+        width: 75%;
+        }
+        }
+
+    .cardsHospedajes{
+            width: 50%;
+            .card-group{
+                padding: 2px;
+                width: 70%;
+                font-size: medium;
+                }
+            .cardsHospedajesRecomendados{
+                    .card{
+                        .card-body{
+                            h5{
+                            font-size: large;
+                            }
+                            p{
+                            font-size: medium;    
+                            }
+                            a{
+                            font-size: medium;    
+                            }
+                        }
+    
+                    }
+                }
+            }
+        
+    }
+/**********************************************************/
+/**********************************************************/
+/* RESPONSIVES                                            */
+/* A DISPOSITIVO TABLET 700PXS                            */
+/**********************************************************/
+/**********************************************************/
+
+@media screen and  (max-width:700px )
+{
+    /***** DE LA HOME *******/
+    .grid-container-home{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head"
+        "nav"
+        "main"
+        "main"
+        "intro"
+        "foot";
+    }
+    .cabecera{
+        grid-area:head;
+        display: flex;
+        flex-direction: column;
+         }
+    
+    .tituloProyecto{
+            justify-self: left;
+            align-self: left; 
+        }
+    .tituloProyecto h1{ font-size: 20px; }    
+    .logo img{
+        display: none;
+    } 
+
+    .heroPresentacion h1{
+        font-size: medium;
+    }
+    .heroPresentacion p{
+        font-size: small;
+    }
+    .introLista ul div h3 {
+        font-size: medium;
+        color: cornflowerblue;
+    }
+    .introLista ul div p {
+        font-size: small;
+    
+    }
+    .introLista ul div a {
+        font-size: x-small;
+    }
+
+  /***** DE los puntos de interes POIs *******/
+    .grid-container-pois{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head head "
+        "nav nav  "
+        "datos aside"
+        "datos aside"
+        "datos aside"
+        "foot foot";
+    
+    }
+    .puntosInteres{
+        font-family: "Roboto", sans-serif;
+        grid-area:datos;
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+        padding: 10px;
+        .poisDetalle{
+            width: 100%;
+            .datosPois{
+    
+            }
+        }
+        .poisGaleria{
+                width: 100%;
+                padding: 0;
+            }
+        
+       
+    }
+    
+
+    /***** DE LA CIUDADES & REGIONES  *******/
+    /**** area main donde hospedarse */
+    .grid-container-ciudades{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head head "
+        "nav nav  "
+        "datos aside"
+        "datos aside"
+        "datos aside"
+        "foot foot";
+    
+    }
+.ciudades{
+    width: 100%;
+    .ciudadDetalle{
+        padding: 5px;
+        
+        .ciudadDetalleTitulo{
+            h2{ 
+                font-size:small;
+            }
+        }
+        .datosCiudad{
+            h3{
+                font-size:medium;
+            }
+        }
+    }
+    .cardsHospedajes{
+        width: 50%;
+        .card-group{
+            padding: 2px;
+            width: 70%;
+            font-size: medium;
+            }
+        .cardsHospedajesRecomendados{
+                .card{
+                    .card-body{
+                        h5{
+                        font-size: medium;
+                        }
+                        p{
+                        font-size: small;    
+                        }
+                        a{
+                        font-size: small;    
+                        }
+                    }
+
+                }
+            }
+        }
+        
+    }
+    /***************************/
+    /* ASIDE de LUGARES       */
+    /* REDUZCO EL TAMAÑO       */
+    /**************************/
+.asideListaCardLugar{
+    width: 100%;
+    h3{
+        text-align: left;
+    }
+    .card{
+        width: 100%;
+    }
+}
+    /***************************/
+    /* ASIDE de VIAJES        */
+    /* REDUZCO EL TAMAÑO       */
+    /**************************/
+    .asideListaViajes{
+        width: 100%;
+        h2{
+            text-align: left;
+            font-size: medium;
+        }
+        div{
+            border-style:groove;
+            border-color:rgba(233, 211, 183, 0.452);
+            h3{
+                font-size: small;
+                font-weight: bold;
+            }
+            .cardViajes_fecha{
+                font-size: small;
+            }
+            .cardViajes_tipo{
+                font-size: small;
+            }
+        }
+
+    }
+    /***** DE LOS PASAJEROS  *******/
+    /**** area main */
+    .pasajeros{
+        grid-area:datos;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .pasajerosDetalle{
+            .datosPasajero{
+                .datosPasajero_nombreCompleto{
+                    width: 400px;
+                }
+                .textoInputPax{
+                    font-size: small;
+                }
+                .form-control{
+                    width: 100%;
+                }
+            }
+        }
+        } 
+.pie{
+        flex-direction: column; }
+    }
+    
+
+
+/**********************************************************/
+/**********************************************************/
+/* RESPONSIVES                                              */
+/* A DISPOSITIVO MOBILE 350PXS                            */
+/**********************************************************/
+/**********************************************************/
+
+@media screen and  (max-width:350px )
+{
+
+     /***** DE LA HOME *******/
+
+    .grid-container-home{
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head "
+        "nav"
+        "main"
+        "main"
+        "intro"
+        "foot";
+    }
+    .cabecera{
+    grid-area:head;
+    display: flex;
+    flex-direction: column;
+    }   
+    .logo img{
+        display: none;
+    } 
+    .tituloProyecto h1{ font-size: 15px; }     
+    
+    .menuPrincipal ul{
+        flex-direction: column;
+        text-align: left;
+    }   
+    .menuPrincipal ul li a{
+        font-size: 10px ;
+        text-align: left;
+    }
+    .menuPrincipal ul li p{
+        font-weight: 700;
+        font-style:normal;
+        font-size: 12px ;
+        text-align: left;
+    }
+    /***** DE LA HOME  *******/
+    /***** area HERO   ******/
+    .hero{
+        .heroPresentacion{
+        }
+        .heroMapaGlobal{
+            h2{
+                font-size: 12px;
+            }
+        }
+    }
+
+  /***** DE los puntos de interes POIs *******/
+  .grid-container-pois{
+    grid-template-columns: 100% ;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "head"
+    "nav  "
+    "aside"
+    "datos"
+    "datos"
+    "datos"
+    "foot";
+}
+.puntosInteres{
+
+    .poisDetalle{
+        width: 100%;
+        .datosPois{
+
+        }
+    }
+}
+
+/***** DE LA CIUDADES & REGIONES  *******/
+    /**** area main */
+    .grid-container-ciudades{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head"
+        "nav"
+        "aside"
+        "datos"
+        "datos"
+        "datos"
+        "foot";
+    
+    }
+    .ciudades{
+        display: flex;
+        flex-direction: column;
+        .ciudadDetalle{
+            width: 75%;
+        }
+    }
+    .cardsHospedajes{
+            .cardsHospedajesRecomendados{
+                .card{
+                    width: 600px;
+                    img{
+                        width: 280px;
+                        height: 160px;
+                    }
+                    .card-body{
+                        
+                    }
+
+                }
+            }
+        }
+    .ciudadMultimedia{
+        .mapaCiudad{
+            width: 300px;
+        }
+        .galeriaCiudad{
+            width: 75%;
+        }
+    }
+    /***** DE LOS VIAJES  *******/
+    /**** area main */
+    .grid-container-viajes{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head"
+        "nav"
+        "aside"
+        "datos"
+        "datos"
+        "datos"
+        "foot";
+    
+    }
+.viajes{
+    .viajesDetalle{
+        .datosViaje{
+            .datosViajeNombre{
+                font-size: small;
+            }
+        }
+    }
+    .agendaViaje{
+            grid-area: datos;
+            width: 100%;
+            font-size: x-small;
+        }
+   
+}
+    /***** DE LOS PASAJEROS  *******/
+    /**** area main */
+    .grid-container-pasajeros{
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "head"
+        "nav"
+        "aside"
+        "datos"
+        "datos"
+        "datos"
+        "foot";
+    }
+
+    .pasajeros{
+        grid-area:datos;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .pasajerosDetalle{
+            .datosPasajero{
+                .datosPasajero_nombreCompleto{
+                    width: 300px;
+                }
+                .textoInputPax{
+                    font-size: small;
+                }
+            }
+        }
+        } 
+    .asideListaPasajeros{
+            .card{
+                width: 100%;
+                .row{
+                    .fotoPax{
+                        width: 150px;
+                    }
+                }                
+            }
+        }
+
+
+    .pie{
+        flex-direction: column; }
+}
+
